@@ -7,10 +7,16 @@ reportersBeat.config(function($stateProvider) {
     controller: "LoginCtrl"
   });
 
-  $stateProvider.state('addBeat', {
-    url:"addBeat.html",
-    templateUrl: "partials/addBeat.html",
+  $stateProvider.state('beats', {
+    url:"beats.html",
+    templateUrl: "partials/beats.html",
     controller: "BeatCtrl",
-    controller: "LoginCtrl"
   });
+
+  $stateProvider.state('beats.reporters', {
+    url: "/:beatId",
+    templateUrl: "partials/beats.reporters.html",
+    controller: 'ReporterCtrl'
+  });
+
 });
