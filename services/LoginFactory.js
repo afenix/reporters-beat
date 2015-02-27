@@ -1,11 +1,12 @@
 reportersBeat.factory('LoginFactory', function LoginFactory() {
   var factory = {};
-  factory.logins = [];
+  factory.logIns = [];
 
   factory.addUser = function () {
-   factory.logins.push({ name: factory.userName, password: factory.userPassword })
+   factory.logIns.push({ name: factory.userName, password: factory.userPassword });
    factory.userName = null;
    factory.userPassword = null;
- });
+ };
+
  return factory;
 });
