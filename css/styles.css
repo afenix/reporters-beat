@@ -1,0 +1,22 @@
+body {
+  background-image: url(blackhole.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container-fluid {
+  text-align: left;
+  width:1000px;
+  margin:0 auto;
+}
+
+p {
+  text-align: left;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+}
