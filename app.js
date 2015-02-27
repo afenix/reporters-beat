@@ -1,1 +1,9 @@
-var reporterBeat = angular.module('reporterBeat', ['ui.router']);
+var reportersBeat = angular.module('reportersBeat', ['ui.router']);
+
+reportersBeat.config(function($stateProvider) {
+  $stateProvider.state('login', {
+    url:"",
+    templateUrl: "partials/login.html"
+  });
+
+});

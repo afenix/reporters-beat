@@ -1,5 +1,5 @@
 body {
-  background-image: url(blackhole.jpg);
+  background-image: url(newspaper1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -15,8 +15,7 @@ p {
   text-align: left;
 }
 
-.centered {
+.checkbox {
   margin-left: auto;
-  margin-right: auto;
-  width: 8em;
+  text-align: left;
 }
