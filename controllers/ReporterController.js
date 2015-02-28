@@ -3,5 +3,7 @@ reportersBeat.controller('ReporterCtrl', function ReporterCtrl($scope, $statePar
   $scope.addReporter = function() {
     $scope.beats.reporters.push({ name: $scope.reporterName, yearsEmployed: $scope.yearsEmployed, birthday: $scope.birthday });
     $scope.reporterName = null;
+    $scope.yearsEmployed = null;
+    $scope.birthday = null;
   }
 });

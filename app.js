@@ -13,9 +13,9 @@ reportersBeat.config(function($stateProvider) {
     controller: "BeatCtrl",
   });
 
-  $stateProvider.state('beats.reporters', {
+  $stateProvider.state('reporters', {
     url: "/:beatId",
-    templateUrl: "partials/beats.reporters.html",
+    templateUrl: "partials/reporters.html",
     controller: 'ReporterCtrl'
   });
 

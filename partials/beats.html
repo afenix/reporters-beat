@@ -1,4 +1,4 @@
-<div class="col-md-12">
+<div class="col-md-4">
   <h3>Please add a new beat:</h3>
   <form ng-submit="BeatFactory.addBeat()" class="form-inline" role="form">
     <div class="form-group">
@@ -8,12 +8,24 @@
   </form>
 </div>
 
-<div ng-show="beats.length">
-  <h3>Here are your beats:</h3>
+<div class="col-md-4">
+  <div ng-show="beats.length">
+    <h3>Search Beats</h3>
+      <form class="form-inline" role="form">
+        <div class="form-group">
+          <input ng-model="query" type="text" class="form-control" id="beat-name" placeholder="Search">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-12">
+  <h2 ng-show="beats.length && filtered.length">Beat List</h2>
+  <h2 ng-show="beats.length && !filtered.length">No Matches</h2>
   <ul>
-    <li ng-repeat="item in beats">
-      {{ item.beatName }}
-      <a ui-sref="beats.reporters ({ beatId: item.id })"> {{ item.name }}</a>
+    <li ng-repeat="item in filtered = (beats | filter:query)">
+      <a ui-sref="reporters ({ beatId: item.id })"> {{ item.name }}</a> - click to add a reporter -
     </li>
   </ul>
 </div>
