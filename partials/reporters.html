@@ -34,14 +34,9 @@
 	<h3>Reporters in the {{ beats.name }} beat</h3>
 	<ul>
 		<li ng-repeat="item in beats.reporters">
-			<a ng-click="showme = true"> {{ item.name }} </a> - click to see more details -
+			{{ item.name }}
+			<ul>Has been on the beat for {{ item.yearsEmployed }} years</ul>
+			<ul>Has a birthday on {{ item.birthday | date }}</ul>
 		</li>
 	</ul>
-</div>
-
-<div class="col-md-6">
-  <h3 ng-show="showme"></h3>
-    <ul ng-repeat="item in beats.reporters">
-      <li>{{item.name}}, {{item.yearEmployed}}, {{item.birthday}}</li>
-    </ul>
 </div>

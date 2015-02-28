@@ -1,21 +1,14 @@
 body {
-  background-image: url(newspaper1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: url('newspaper1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 50% ;
+  background-position: center bottom;
 }
 
 .container-fluid {
   text-align: left;
   width:1000px;
   margin:0 auto;
-}
-
-p {
-  text-align: left;
-}
-
-.checkbox {
-  margin-left: auto;
-  text-align: left;
 }
